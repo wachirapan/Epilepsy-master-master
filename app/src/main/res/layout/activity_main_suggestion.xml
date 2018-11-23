@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainSuggestion">
+    <TextView
+        android:id="@+id/class1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="คำแนะนำผู้ป่วย"
+        android:textColor="@color/colorAccent"
+        android:textSize="25dp" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/class1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1.การปฐมพยาบาลเบื้องต้นเมื่อผู้ป่วยมีอาการชัก \nตั้งสติ ไม่ตื่นตระหนก\nป้องกันการบาดเจ็บโดยให้ผู้ป่วยอยู่ในบริเวณที่โล่งไม่มีสิ่งกีดขวางที่จะเป็นอันตราย" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ไม่กอดรัดผู้ผ่วย หากผู้ป่วยชักแล้วมีอาการดิ้น\nห้ามนำสิ่งใด ๆ มส่ในปากผู้ป่วยอาจกัดสิ่งเหล้านั้นจนขาดและตกไปอุดตันหลอดลมได้\nอย่าให้นำ ยา หรืออาหรแก่ผู้ป่วยจนกว่าผู้ป่วยจะรู้สึกดีขึ้น" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="จับเวลาว่าผู้ป่วยมีอาการชักนานเท่าไร ถ้าอากรชักนานกว่า 5 นาที หรือมีอาการชักเกิดขึ้นซ้ำๆ กัน หลายครั้ง ควรพาไปโรงพยาบาลทันที\nหลังจากผู้ป่วยหยุดชัก ควรจัดผู้ป่วยนอนตะแคงเพื่อลดอาการสำลักเข้าหลอดลม" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic3" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic4" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic5" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic6" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2.กิจกรรมในชีวิตประจำวัน\nการอาบน้ำควรหลีกเลี่ยงการอาบน้ำอ่างอาบน้ำ สระน้ำหรือคันครอง การเตียมอาหาร หลีกเลี่ยงการเตรียมอาหารหน้าเตาแก๊ซหรือเตาถ่านที่มีความร้อนสูง ตลอดจน น้ำมันทอดที่ร้อน\nการเดินทาง ควรเดินทางโดยการเดินหรือรถสาธารณะ งดขับรถจนกว่าจะสามรถควบคุม อาการชักได้ และแพทย์อนุญาติ" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3.การออกกำลังกายในผู้ป่วยโรคลมชัก\nผู้ป่วยที่สามารถควบคุมอาการชักได้อย่างน้อย 1 ปี สามารถเล่นกีฬาได้แต่ควรหลีกเลี้ยงกีฬาที่มีความ เสี่ยงสูง ควรมีอุปกรณ์ป้องกันและมีผู้ดูแลโดยแบ่งความเสี่ยงของชนิดกีฬาดังจ่อไปนี้" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/pic7" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4.การขับรถ\nแพทย์เป็นผู้พิจารณาว่าผู้ป่วยลมชักสามารถขับรถได้หรือไม่ เนื่องจากอาการชักขณะขับรถอาจทำให้เ กิดอันตรายสูงต่อชีวิตทั้งของตนเองและผู้อื่น\nผู้ที่ขับขี่รถส่วนบุคคล ที่มีอาการชักแบบไม่รู่สติ หรือสูญเสียการควบคุมการเคลื่อนไหวของร่างกาย ต้องหยุดขับรถทันที และจะสามารถกลับมาขับรถได้อีก เมื่อสามารถควบคุมอาการชักได้ ไม่น้อยกว่า 1 ปี\nผู้ที่ขับรถสาธารณะ ที่มีอาการชักแบบไม่รู้สติ หรือสูญเสียการควบคุมเคลื่อนไหวของร่างกาย ต้องหยุดขับรถทันที และจะสามารถกลับมาขับรถได้อีก เมื่อสามารถควบคุมอาการชักได้ไม่น้อยกว่า 10 ปี" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5.การจ้องงานและการทำงาน\nผู้ป่วยลมชักที่ควบคุมอาการชักได้แล้วสามารถทำงานได้เป็นปกติ\nผู้ป่วยลมชักที่ยังควบคุมอาการชักไม่ได้ก็ยังสามารทำงานได้ แต่ควรหลีกเลี่ยงการทำงานในที่สูง หรือ การทำงานเกี่ยวข้องกับ เครื่องจักรกล และไม่ควรให้ขับขี่รถยนต์หรือจักรยานยนต์\nกรณีผู้ป่วยลงชักมีปัญหา mental retardation ร่วมด้วย สามารถให้ทำงานง่ายๆ ได้ ตามความ เหมาะสมของผู้ป่วย บางคนแนะนำให้เปลี่ยนที่โรงเรียนพิเศษเพื่อฝึกหัดอาชีพได้" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="หน้าข้อมูลยา ผลข้างเคียงของยาและการแพ้ยา" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/pic7" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ชนิดอาการชัก\nการชักที่ทำอะไรโดยไม่รู้ตัว\nการชักที่มีลักษณะล้มลง เกร็ง กระตุกทั้งตัวเป็นพักๆ\nการชักที่ตาเหม่อลอย ระยะสั้น\nการชักระตุก แขนหรือขาชาเฉพาะที่รู้สติดี\nการชักกระตุกทั้งตัวครั้งเดียว หมดสติ" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="สิ่งกระตุ้นที่ทำให้เกิดอาการชัก\nไข้สูง\nเครื่่องดื่มแอลกอฮอล์\nการอดนอน\nความเครียด\nประจำเดือน" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

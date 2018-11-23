@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainEditProfile"
+    android:background="@drawable/bg">
+    <TextView
+        android:id="@+id/txtprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ข้อมูลส่วนตัว"
+        android:textSize="22dp" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_below="@+id/txtprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/submitprofile"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ชื่อ สกุล"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/txtname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="อายุ"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/txtage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="เบอร์โทรศัพท์"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/txttell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="สิทธ์การรักษา"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/txttreatment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="สาเหตุอาการชัก"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/txtcause"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ชนิดของการชัก"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/txttype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="สิ่งกระตุ้นที่ทำให้เกิด"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/txtstimulant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ผลข้างเคียงการทานยา"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/txtsideeffect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ประวัติการแพ้ยา"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/txtallergyhistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <Button
+        android:background="@color/colorPingy"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/submitprofile"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="จัดเก็บข้อมูล" />
+
+</RelativeLayout>

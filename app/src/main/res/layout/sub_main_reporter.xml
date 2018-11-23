@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Maincontent"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:text="สาเหตขุองการชัก :"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/detailcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Maincontent"
+        android:layout_marginTop="18dp"
+        android:text="สาเหตขุองการชัก"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@+id/Maincontent"
+        app:layout_constraintTop_toBottomOf="@+id/Maincontent" />
+
+
+    <TextView
+        android:id="@+id/detaildate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/detailcontent"
+        android:layout_marginLeft="64dp"
+        android:layout_marginStart="64dp"
+        android:text="เวลาบันทึก"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/detailcontent"
+        app:layout_constraintTop_toTopOf="@+id/detailcontent" />
+
+    <Button
+        android:id="@+id/searchdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@color/colordetail"
+        android:text="รายละเอียด"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+</android.support.constraint.ConstraintLayout>

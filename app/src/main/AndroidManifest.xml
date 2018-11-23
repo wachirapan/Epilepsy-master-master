@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.codehousedev.epilepsy">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainEditProfile" />
+        <activity
+            android:name=".MainSymptoms"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainInsertSymptom" />
+        <activity android:name=".SymptomDetail" />
+        <activity
+            android:name=".MainSettime"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainSuggestion" />
+        <activity android:name=".MainHistory" />
+        <activity android:name=".MainInsertHistory" />
+        <activity android:name=".MainEditSymptom" />
+        <activity
+            android:name=".MainReporter"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainAfterReport"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:process=":remote" />
+
+        <activity android:name=".MainEditTiming" />
+        <activity android:name=".SetTime" />
+        <activity
+            android:name=".ShowEvent"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".ReportSearch" />
+        <activity android:name=".SearchDate"></activity>
+    </application>
+
+</manifest>

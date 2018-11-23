@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainSettime"
+    tools:showIn="@layout/app_bar_settime"
+    android:background="@drawable/bg">
+    <TextView
+        android:textColor="@color/colorAccent"
+        android:id="@+id/txtsetting"
+        android:text="จัดการการกินยา"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:id="@+id/listviewsettiming"
+        android:layout_below="@+id/txtsetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btninsertgrug">
+
+    </ListView>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btninsertgrug"
+        android:text="ตั้งเวลากินยา"
+        android:background="@color/colorPingy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

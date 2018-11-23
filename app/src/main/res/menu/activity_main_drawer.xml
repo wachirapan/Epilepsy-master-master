@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main"
+            android:title="หน้าหลัก" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:title="บันทึกอาการ" />
+        <item
+            android:id="@+id/nav_manage"
+            android:title="การแจ้งเตือนทานยา" />
+    </group>
+
+    <item android:title="สรุปรายงาน">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:title="สรุปรายงานผู้ป่วย" />
+            <item
+                android:id="@+id/nav_send"
+                android:title="รายงานย้อนหลัง" />
+        </menu>
+    </item>
+
+</menu>
