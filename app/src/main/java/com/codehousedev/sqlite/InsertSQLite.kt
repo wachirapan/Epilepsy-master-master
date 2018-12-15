@@ -4,6 +4,9 @@ import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 
+import java.util.Calendar
+
+
 class InsertSQLite(context: Context?) : ConnectSQLite(context) {
     lateinit var db: SQLiteDatabase
 
@@ -28,7 +31,7 @@ class InsertSQLite(context: Context?) : ConnectSQLite(context) {
                       symptoms_length: String, symptom_durationhour: String, symptom_durationminute: String) {
         db = this.writableDatabase
         var values = ContentValues()
-
+        val currentTime = Calendar.getInstance().getTime()
         values.put("symptoms_cause", symptoms_cause)
         values.put("symptoms_type", symptoms_type)
         values.put("symptoms_stimulant", symptoms_stimulant)
@@ -37,6 +40,7 @@ class InsertSQLite(context: Context?) : ConnectSQLite(context) {
         values.put("symptom_durationhour", symptom_durationhour)
         values.put("symptom_durationminute", symptom_durationminute)
         values.put("symptom_status", "n")
+        values.put("symptoms_time",currentTime.toString())
         db.insert("symptoms", null, values)
     }
 

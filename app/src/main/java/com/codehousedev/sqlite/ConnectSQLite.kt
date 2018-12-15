@@ -39,7 +39,7 @@ open class ConnectSQLite(context: Context?) : SQLiteOpenHelper(context, "elileps
                 " symptom_durationhour TEXT," +
                 " symptom_durationminute TEXT," +
                 " symptom_status TEXT," +
-                " symptoms_time DATETIME DEFAULT CURRENT_TIMESTAMP)")
+                " symptoms_time TEXT)")
 
 
 
