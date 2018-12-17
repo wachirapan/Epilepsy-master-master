@@ -38,8 +38,9 @@
             android:textSize="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-        <EditText
+        <Spinner
             android:id="@+id/type"
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <TextView
@@ -48,6 +49,12 @@
             android:textSize="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/txtstimulant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp" />
         <EditText
             android:id="@+id/stimulant"
             android:layout_width="match_parent"

@@ -62,7 +62,7 @@ class SearchDate : Activity(), View.OnClickListener {
 
 
             val datePickerDialog = DatePickerDialog(this,
-                    DatePickerDialog.OnDateSetListener { view, year, monthOfYear, dayOfMonth -> date1.setText(dayOfMonth.toString() + "-" + (monthOfYear + 1) + "-" + year) }, mYear, mMonth, mDay)
+                    DatePickerDialog.OnDateSetListener { view, year, monthOfYear, dayOfMonth -> date1.setText(year.toString() +"-"+(monthOfYear + 1)+"-"+dayOfMonth.toString()) }, mYear, mMonth, mDay)
             datePickerDialog.show()
         }
         if (v === date2) {
@@ -74,7 +74,7 @@ class SearchDate : Activity(), View.OnClickListener {
 
 
             val datePickerDialog = DatePickerDialog(this,
-                    DatePickerDialog.OnDateSetListener { view, year, monthOfYear, dayOfMonth -> date2.setText(dayOfMonth.toString() + "-" + (monthOfYear + 1) + "-" + year) }, mYear, mMonth, mDay)
+                    DatePickerDialog.OnDateSetListener { view, year, monthOfYear, dayOfMonth -> date2.setText(year.toString() +"-"+(monthOfYear + 1)+"-"+dayOfMonth.toString()) }, mYear, mMonth, mDay)
             datePickerDialog.show()
         }
     }
